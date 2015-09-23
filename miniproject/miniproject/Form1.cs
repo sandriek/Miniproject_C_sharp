@@ -100,6 +100,7 @@ namespace miniproject
         string[] tiles = new string[12];
 
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
+        string[] plaatjes = new string[12];
         public Form1()
         {
             InitializeComponent();
@@ -155,6 +156,20 @@ namespace miniproject
 
             return Encoding.Unicode.GetString(buffer, 0, totalRead);
         }
+
+        public void moetvervangenworden()
+        {
+            //foreach () ;
+        }
+
+        public void plaatjesSchrijven()
+        {
+            foreach(String plaatje in plaatjes)
+            {
+
+            }
+        }
+
 
 
         private void x1x1_Click(object sender, EventArgs e)
