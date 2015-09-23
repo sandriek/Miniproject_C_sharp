@@ -29,9 +29,10 @@ namespace miniproject
         private void button1_Click(object sender, EventArgs e)
         {
 
-            clientSocket.Connect("145.48.231.46", 8888);
-            WriteMessage(clientSocket, "derp");
-00
+            clientSocket.Connect(getIP(), 8888);
+            ReadMessage(clientSocket);
+            WriteMessage(clientSocket, "ready");
+
 
             
 
@@ -40,13 +41,41 @@ namespace miniproject
         }
         private static void WriteMessage(TcpClient client, string message)
         {
-
-            //make sure the other end decodes with the same format!
             byte[] bytes = Encoding.Unicode.GetBytes(message);
-
             client.GetStream().Write(bytes, 0, bytes.Length);
         }
+        public static String getIP()
+        {
+            IPHostEntry host;
+            string localIP = "?";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    localIP = ip.ToString();
+                }
+            }
+            return localIP;
+        }
+        private string ReadMessage(TcpClient client)
+        {
+            byte[] buffer = new byte[256];
+            int totalRead = 0;
 
+
+            do
+            {
+
+                int read = client.GetStream().Read
+                    (buffer, totalRead, buffer.Length - totalRead);
+
+                totalRead += read;
+            } while (client.GetStream().DataAvailable);
+
+            return Encoding.Unicode.GetString(buffer, 0, totalRead);
+        }
+       
     }
-    }
+  }
 

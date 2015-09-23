@@ -20,10 +20,10 @@ namespace Miniproject_server
             serverSocket.Start();
                     Console.WriteLine(" >> Server Started");
                     clientSocket1 = serverSocket.AcceptTcpClient();
-                    Console.WriteLine(" >> Accept connection from client1");
+                    Console.WriteLine(" >> Accept connection from player 1");
                     Console.WriteLine(" >> Server Started");
                     clientSocket2 = serverSocket.AcceptTcpClient();
-                    Console.WriteLine(" >> Accept connection from client1");
+                    Console.WriteLine(" >> Accept connection from player 2");
             server_thread client = new server_thread();
             client.startClient(clientSocket1, clientSocket2);
 
@@ -42,20 +42,21 @@ namespace Miniproject_server
                 {
                     this.clientSocket3 = inClientSocket3;
                     this.clientSocket4 = inClientSocket4;
-                Console.WriteLine("jo2");
                 System.Threading.Thread ctThread = new System.Threading.Thread(doChat);
-                Console.WriteLine("jo3");
                 ctThread.Start();
-                Console.WriteLine("jo4");
-            }
+
+                }
             private void doChat()
             {
-                Console.WriteLine("jo");
+                WriteMessage(clientSocket3, "voorbeeld");
+                WriteMessage(clientSocket4, "voorbeeld");
                 while (true)
                 {
-                    Console.WriteLine("jo5");
+
+
+
                     try {
-                       Console.WriteLine( ReadMessage(clientSocket3));
+                        Console.WriteLine(ReadMessage(clientSocket3));
                         Console.WriteLine(ReadMessage(clientSocket4));
                     }
                     catch(Exception ex)
@@ -72,7 +73,7 @@ namespace Miniproject_server
 
                 do
                 {
-                    //blocks until client sends message:	
+	
                     int read = client.GetStream().Read
                         (buffer, totalRead, buffer.Length - totalRead);
 
@@ -81,7 +82,27 @@ namespace Miniproject_server
 
                 return Encoding.Unicode.GetString(buffer, 0, totalRead);
             }
+            public static String getIP()
+            {
+                IPHostEntry host;
+                string localIP = "?";
+                host = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (IPAddress ip in host.AddressList)
+                {
+                    if (ip.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        localIP = ip.ToString();
+                    }
                 }
+                return localIP;
             }
+            private static void WriteMessage(TcpClient client, string message)
+            {
+                byte[] bytes = Encoding.Unicode.GetBytes(message);
+                client.GetStream().Write(bytes, 0, bytes.Length);
+            }
+            
+        }
+    }
 }
 
