@@ -29,21 +29,11 @@ namespace Miniproject_server
                 {
                     requestCount = requestCount + 1;
                     NetworkStream networkStream = clientSocket.GetStream();
-                    byte[] bytesFrom = new byte[10025];
-                    networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
-                    string dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
-                    dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("$"));
-                    Console.WriteLine(" >> Data from client - " + dataFromClient);
-                    string serverResponse = "Last Message from client" + dataFromClient;
-                    Byte[] sendBytes = Encoding.ASCII.GetBytes(serverResponse);
-                    networkStream.Write(sendBytes, 0, sendBytes.Length);
-                    networkStream.Flush();
-                    Console.WriteLine(" >> " + serverResponse);
+
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());
-                    break;
                 }
             }
 
