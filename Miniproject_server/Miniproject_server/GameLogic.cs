@@ -45,9 +45,21 @@ namespace Miniproject_server
 
         public List<string> CreateBoard()
         {
+            List<string> tiles = new List<string>();
+            try
+            {
+                using (StreamReader sr = new StreamReader("tiles"))
+                {
 
+                }
 
-            return new List<string>();
+                return tiles;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
         }
     }
 }
