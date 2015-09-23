@@ -30,8 +30,22 @@ namespace miniproject
         {
 
             clientSocket.Connect("145.48.231.46", 8888);
-        }
+            WriteMessage(clientSocket, "derp");
+00
 
+            
+
+
+            
+        }
+        private static void WriteMessage(TcpClient client, string message)
+        {
+
+            //make sure the other end decodes with the same format!
+            byte[] bytes = Encoding.Unicode.GetBytes(message);
+
+            client.GetStream().Write(bytes, 0, bytes.Length);
+        }
 
     }
     }

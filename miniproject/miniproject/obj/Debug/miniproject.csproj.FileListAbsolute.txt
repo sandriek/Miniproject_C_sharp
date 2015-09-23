@@ -7,3 +7,12 @@ c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\ob
 c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.csproj.GenerateResource.Cache
 c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.exe
 c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.pdb
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.exe.config
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.exe
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.pdb
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.exe
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.pdb
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.csprojResolveAssemblyReference.cache
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.Form1.resources
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.Properties.Resources.resources
+C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.csproj.GenerateResource.Cache

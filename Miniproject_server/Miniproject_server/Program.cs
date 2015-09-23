@@ -10,39 +10,78 @@ namespace Miniproject_server
 {
     class Program
     {
-
+        public static List<TcpClient> client = new List<TcpClient>();
+        
         static void Main(string[] args)
         {
-
-            TcpListener serverSocket = new System.Net.Sockets.TcpListener(IPAddress.Parse("145.48.231.46"), 8888);
-            int requestCount = 0;
-            TcpClient clientSocket = default(TcpClient);
+            TcpListener serverSocket = new System.Net.Sockets.TcpListener(8888);
+            TcpClient clientSocket1 = default(TcpClient);
+            TcpClient clientSocket2 = default(TcpClient);
             serverSocket.Start();
-            Console.WriteLine(" >> Server Started");
-            clientSocket = serverSocket.AcceptTcpClient();
-            Console.WriteLine(" >> Accept connection from client");
-            requestCount = 0;
+                    Console.WriteLine(" >> Server Started");
+                    clientSocket1 = serverSocket.AcceptTcpClient();
+                    Console.WriteLine(" >> Accept connection from client1");
+                    Console.WriteLine(" >> Server Started");
+                    clientSocket2 = serverSocket.AcceptTcpClient();
+                    Console.WriteLine(" >> Accept connection from client1");
+            server_thread client = new server_thread();
+            client.startClient(clientSocket1, clientSocket2);
 
-            while ((true))
-            {
-                try
-                {
-                    requestCount = requestCount + 1;
-                    NetworkStream networkStream = clientSocket.GetStream();
 
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.ToString());
-                }
-            }
 
-            clientSocket.Close();
-            serverSocket.Stop();
+
+
             Console.WriteLine(" >> exit");
             Console.ReadLine();
         }
+        public class server_thread
+        {
+             TcpClient clientSocket3 = null;
+            TcpClient clientSocket4 = null;    
+                public void startClient(TcpClient inClientSocket3, TcpClient inClientSocket4)
+                {
+                    this.clientSocket3 = inClientSocket3;
+                    this.clientSocket4 = inClientSocket4;
+                Console.WriteLine("jo2");
+                System.Threading.Thread ctThread = new System.Threading.Thread(doChat);
+                Console.WriteLine("jo3");
+                ctThread.Start();
+                Console.WriteLine("jo4");
+            }
+            private void doChat()
+            {
+                Console.WriteLine("jo");
+                while (true)
+                {
+                    Console.WriteLine("jo5");
+                    try {
+                       Console.WriteLine( ReadMessage(clientSocket3));
+                        Console.WriteLine(ReadMessage(clientSocket4));
+                    }
+                    catch(Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+            private string ReadMessage(TcpClient client)
+            {
+                byte[] buffer = new byte[256];
+                int totalRead = 0;
 
-    }
+
+                do
+                {
+                    //blocks until client sends message:	
+                    int read = client.GetStream().Read
+                        (buffer, totalRead, buffer.Length - totalRead);
+
+                    totalRead += read;
+                } while (client.GetStream().DataAvailable);
+
+                return Encoding.Unicode.GetString(buffer, 0, totalRead);
+            }
+                }
+            }
 }
 
