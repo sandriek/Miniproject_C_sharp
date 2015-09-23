@@ -97,6 +97,7 @@ namespace miniproject
         Image pe1s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsleeg1.gif");
         Image pe1o= Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsleeg1r.gif");
         Image pe1d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerleeg1.gif");
+        string[] tiles = new string[12];
 
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
         public Form1()
@@ -113,7 +114,10 @@ namespace miniproject
         {
 
             clientSocket.Connect(getIP(), 8888);
-            ReadMessage(clientSocket);
+            for(int i = 0; i < tiles.Length; i++)
+            {
+                tiles[i] = ReadMessage(clientSocket);
+            }
             WriteMessage(clientSocket, "ready");
             
         }
