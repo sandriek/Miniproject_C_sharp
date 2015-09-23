@@ -46,11 +46,17 @@ namespace Miniproject_server
         public List<string> CreateBoard()
         {
             List<string> tiles = new List<string>();
+            byte amount = 12;
             try
             {
+                Random rnd = new Random();
                 using (StreamReader sr = new StreamReader("tiles"))
                 {
+                    while (amount > 0)
+                    {
+                        int tile = rnd.Next(1, File.ReadAllLines(@"tiles").Length);
 
+                    }
                 }
 
                 return tiles;
