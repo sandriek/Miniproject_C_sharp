@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,11 @@ namespace Miniproject_server
             else return false;
         }
 
+        public List<string> CreateBoard()
+        {
 
+
+            return new List<string>();
+        }
     }
 }
