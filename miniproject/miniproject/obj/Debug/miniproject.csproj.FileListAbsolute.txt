@@ -1,0 +1,9 @@
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\bin\Debug\miniproject.exe.config
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\bin\Debug\miniproject.exe
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\bin\Debug\miniproject.pdb
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.csprojResolveAssemblyReference.cache
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.Form1.resources
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.Properties.Resources.resources
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.csproj.GenerateResource.Cache
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.exe
+c:\users\sander\documents\visual studio 2015\Projects\miniproject\miniproject\obj\Debug\miniproject.pdb
