@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Miniproject_server
 {
-    class GameLogic
+    class game
     {
-        public GameLogic()
+        public game()
         {
 
         }
@@ -54,8 +54,8 @@ namespace Miniproject_server
                 {
                     while (amount > 0)
                     {
-                        int tile = rnd.Next(1, File.ReadAllLines("tiles").Length);
-                        string line = File.ReadLines("tiles").Skip(tile - 1).First();
+                        int tile = rnd.Next(1, File.ReadAllLines(@"tiles").Length);
+
                     }
                 }
 

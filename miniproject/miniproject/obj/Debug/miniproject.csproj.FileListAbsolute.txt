@@ -19,12 +19,3 @@ C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj
 C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.exe.config
 C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.exe
 C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.pdb
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.csprojResolveAssemblyReference.cache
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.Form1.resources
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.Properties.Resources.resources
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.csproj.GenerateResource.Cache
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.exe
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.pdb
-C:\Users\jeroen\Desktop\school\Miniproject_C_sharp\miniproject\miniproject\bin\Debug\miniproject.exe.config
-C:\Users\jeroen\Desktop\school\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.exe
-C:\Users\jeroen\Desktop\school\Miniproject_C_sharp\miniproject\miniproject\obj\Debug\miniproject.pdb
