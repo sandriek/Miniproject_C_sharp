@@ -14,9 +14,7 @@ namespace Miniproject_server
         
         static void Main(string[] args)
         {
-
-            
-              TcpListener serverSocket = new System.Net.Sockets.TcpListener(8888);
+            TcpListener serverSocket = new System.Net.Sockets.TcpListener(8888);
             TcpClient clientSocket1 = default(TcpClient);
             TcpClient clientSocket2 = default(TcpClient);
             serverSocket.Start();
@@ -38,9 +36,7 @@ namespace Miniproject_server
         }
         public class server_thread
         {
-            game a = new game();
-            game b = new game();
-            TcpClient clientSocket3 = null;
+             TcpClient clientSocket3 = null;
             TcpClient clientSocket4 = null;    
                 public void startClient(TcpClient inClientSocket3, TcpClient inClientSocket4)
                 {
@@ -48,71 +44,22 @@ namespace Miniproject_server
                     this.clientSocket4 = inClientSocket4;
                 System.Threading.Thread ctThread = new System.Threading.Thread(doChat);
                 ctThread.Start();
-                System.Threading.Thread ctThread1 = new System.Threading.Thread(doChat1);
-                ctThread1.Start();
-            }
+
+                }
             private void doChat()
             {
                 WriteMessage(clientSocket3, "voorbeeld");
-                while (true)
-                {
-
-                       
-
-                    try {
-                        string player1 = ReadMessage(clientSocket3);
-                        if ( player1 == "ready")
-                        { Console.WriteLine("Ready");
-                           List<string> list1 = a.CreateBoard();
-                            foreach (string s in list1)
-                            {
-                                WriteMessage(clientSocket3, s );
-                            }
-                        }
-                        else
-                        {
-                            string set1 = ReadMessage(clientSocket3);
-                             string set2 = ReadMessage(clientSocket3);
-                              string set3 = ReadMessage(clientSocket3);
-                        }
-                    }
-                    catch(Exception ex)
-                    {
-                        Console.WriteLine(ex.ToString());
-                    }
-                }
-            }
-            private void doChat1()
-            {
                 WriteMessage(clientSocket4, "voorbeeld");
                 while (true)
                 {
 
 
 
-                    try
-                    {
-                        string player2 = ReadMessage(clientSocket4);
-                        if (player2 == "ready")
-                        {
-                            Console.WriteLine("Ready");
-                            List<string> list2 = b.CreateBoard();
-                            foreach (string s in list2)
-                            {
-                                WriteMessage(clientSocket4, s);
-                            }
-                        }
-                        else
-                        {
-                              string set1 = ReadMessage(clientSocket4);
-                               string set2  = ReadMessage(clientSocket4);
-                                 string set3  = ReadMessage(clientSocket4);
-
-                        }
-
-
+                    try {
+                        Console.WriteLine(ReadMessage(clientSocket3));
+                        Console.WriteLine(ReadMessage(clientSocket4));
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
                         Console.WriteLine(ex.ToString());
                     }
