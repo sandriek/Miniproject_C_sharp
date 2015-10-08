@@ -16,7 +16,7 @@ namespace miniproject
     {
         Image gs3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenstreep3.gif");
         Image gs3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenstreep3r.gif");
-        Image gs3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenvliegerstreep2.gif");
+        Image gs3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenvliegerstreep3.gif");
         Image gs2o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenstreep2r.gif");
         Image gs2s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenstreep2.gif");
         Image gs2d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Groenvliegerstreep2.gif");
@@ -44,15 +44,15 @@ namespace miniproject
 
         Image rs3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodstreep3.gif");
         Image rs3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodstreep3r.gif");
-        Image rs3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodvliegerstreep2.gif");
+        Image rs3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodvliegerstreep3.gif");
         Image rs2o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodstreep2r.gif");
         Image rs2s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodstreep2.gif");
         Image rs2d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodvliegerstreep2.gif");
         Image rs1s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodstreep1.gif");
         Image rs1o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodstreep1r.gif");
         Image rs1d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodvliegerstreep1.gif");
-        Image rf3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodheel3r.gif");
-        Image rf3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodheel3.gif");
+        Image rf3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodheel3r.gif");
+        Image rf3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodheel3.gif");
         Image rf3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodvliegerheel3.gif");
         Image rf2s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodheel2.gif");
         Image rf2o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Roodheel2r.gif");
@@ -72,15 +72,15 @@ namespace miniproject
 
         Image ps3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsstreep3.gif");
         Image ps3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsstreep3r.gif");
-        Image ps3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerstreep2.gif");
+        Image ps3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerstreep3.gif");
         Image ps2o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsstreep2r.gif");
         Image ps2s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsstreep2.gif");
         Image ps2d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerstreep2.gif");
         Image ps1s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsstreep1.gif");
         Image ps1o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsstreep1r.gif");
         Image ps1d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerstreep1.gif");
-        Image pf3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsheel3r.gif");
-        Image pf3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsheel3.gif");
+        Image pf3o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsheel3r.gif");
+        Image pf3s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsheel3.gif");
         Image pf3d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerheel3.gif");
         Image pf2s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsheel2.gif");
         Image pf2o = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsheel2r.gif");
@@ -164,9 +164,9 @@ namespace miniproject
 
         public void plaatjesSchrijven()
         {
-            foreach(String plaatje in plaatjes)
+            foreach(String plaatje in tiles)
             {
-
+                x1x1.Image = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\C#\\"+plaatje+".gif");
             }
         }
 
