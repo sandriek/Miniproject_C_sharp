@@ -10,6 +10,6 @@ C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproj
 C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproject_server\bin\Debug\Miniproject_server.exe
 C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproject_server\bin\Debug\Miniproject_server.pdb
 C:\Users\sander\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproject_server\obj\Debug\Miniproject_server.csprojResolveAssemblyReference.cache
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproject_server\bin\Debug\Miniproject_server.exe.config
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproject_server\obj\Debug\Miniproject_server.exe
-C:\Users\martijn\Documents\GitHub\Miniproject_C_sharp\Miniproject_server\Miniproject_server\obj\Debug\Miniproject_server.pdb
+C:\Users\jeroen\Desktop\school\Miniproject_C_sharp\Miniproject_server\Miniproject_server\bin\Debug\Miniproject_server.exe.config
+C:\Users\jeroen\Desktop\school\Miniproject_C_sharp\Miniproject_server\Miniproject_server\obj\Debug\Miniproject_server.exe
+C:\Users\jeroen\Desktop\school\Miniproject_C_sharp\Miniproject_server\Miniproject_server\obj\Debug\Miniproject_server.pdb
