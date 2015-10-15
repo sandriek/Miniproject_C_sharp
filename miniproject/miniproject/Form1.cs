@@ -97,13 +97,27 @@ namespace miniproject
         Image pe1s = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsleeg1.gif");
         Image pe1o= Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsleeg1r.gif");
         Image pe1d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerleeg1.gif");
+
         string[] tiles = new string[12];
+        List<Button> buttons = new List<Button>();
 
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
-        string[] plaatjes = new string[12];
         public Form1()
         {
             InitializeComponent();
+            buttons.Add(x1x1);
+            buttons.Add(x2x1);
+            buttons.Add(x3x1);
+            buttons.Add(x4x1);
+            buttons.Add(x1x2);
+            buttons.Add(x2x2);
+            buttons.Add(x3x2);
+            buttons.Add(x4x2);
+            buttons.Add(x1x3);
+            buttons.Add(x2x3);
+            buttons.Add(x3x3);
+            buttons.Add(x4x3);
+
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -164,9 +178,11 @@ namespace miniproject
 
         public void plaatjesSchrijven()
         {
+            int n = 0;
             foreach(String plaatje in tiles)
             {
-                x1x1.Image = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\C#\\"+plaatje+".gif");
+                buttons[n].Image = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\C#\\"+plaatje+".gif");
+                n++;
             }
         }
 
