@@ -103,6 +103,7 @@ namespace miniproject
         //Image pe1d = Image.FromFile("C:\\Users\\martijn\\Documents\\GitHub\\Miniproject_C_sharp\\miniproject\\Pictures\\Paarsvliegerleeg1.gif");
 
         string[] tiles = new string[12];
+        string[] check = new string[3];
         List<Button> buttons = new List<Button>();
 
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
@@ -190,22 +191,274 @@ namespace miniproject
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void x1x1_Click(object sender, EventArgs e)
         {
-            //Button.image
-            ///x1x1.Image = Resources
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach(Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+
         }
 
         private void x2x1_Click(object sender, EventArgs e)
         {
-            //x2x1.Image = ge1s;
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void x3x1_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+
+        }
+
+        private void x4x1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x1x2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x2x2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x3x2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x4x2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x1x3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x2x3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x3x3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void x4x3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= check.Length; i++)
+            {
+                if (check[i] == null)
+                {
+                    check[i] = x1x1.Image.ToString();
+                    x1x1.BackColor = Color.Blue;
+                    break;
+                }
+                else if (i == 3)
+                {
+                    foreach (Button button in buttons)
+                    {
+                        button.BackColor = Color.Empty;
+                    }
+                }
+
+            }
         }
     }
   }
 
+
+//for(int i = 0; if < array.length; i++){
+//    if(Array[i] == null{
+//    voegtoe();
+//    break;
+//    }}

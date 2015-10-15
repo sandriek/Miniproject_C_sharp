@@ -42,12 +42,13 @@
             this.x4x1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // x1x1
             // 
             this.x1x1.BackColor = System.Drawing.SystemColors.Control;
-            this.x1x1.Enabled = false;
             this.x1x1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.x1x1.Location = new System.Drawing.Point(44, 71);
             this.x1x1.Margin = new System.Windows.Forms.Padding(2);
@@ -66,6 +67,7 @@
             this.x1x2.Size = new System.Drawing.Size(110, 82);
             this.x1x2.TabIndex = 0;
             this.x1x2.UseVisualStyleBackColor = false;
+            this.x1x2.Click += new System.EventHandler(this.x1x2_Click);
             // 
             // x1x3
             // 
@@ -76,6 +78,7 @@
             this.x1x3.Size = new System.Drawing.Size(110, 82);
             this.x1x3.TabIndex = 0;
             this.x1x3.UseVisualStyleBackColor = false;
+            this.x1x3.Click += new System.EventHandler(this.x1x3_Click);
             // 
             // x2x3
             // 
@@ -86,6 +89,7 @@
             this.x2x3.Size = new System.Drawing.Size(110, 82);
             this.x2x3.TabIndex = 0;
             this.x2x3.UseVisualStyleBackColor = false;
+            this.x2x3.Click += new System.EventHandler(this.x2x3_Click);
             // 
             // x3x3
             // 
@@ -96,6 +100,7 @@
             this.x3x3.Size = new System.Drawing.Size(110, 82);
             this.x3x3.TabIndex = 0;
             this.x3x3.UseVisualStyleBackColor = false;
+            this.x3x3.Click += new System.EventHandler(this.x3x3_Click);
             // 
             // x3x2
             // 
@@ -106,6 +111,7 @@
             this.x3x2.Size = new System.Drawing.Size(110, 82);
             this.x3x2.TabIndex = 0;
             this.x3x2.UseVisualStyleBackColor = false;
+            this.x3x2.Click += new System.EventHandler(this.x3x2_Click);
             // 
             // x2x2
             // 
@@ -116,6 +122,7 @@
             this.x2x2.Size = new System.Drawing.Size(110, 82);
             this.x2x2.TabIndex = 0;
             this.x2x2.UseVisualStyleBackColor = false;
+            this.x2x2.Click += new System.EventHandler(this.x2x2_Click);
             // 
             // x2x1
             // 
@@ -138,6 +145,7 @@
             this.x3x1.Size = new System.Drawing.Size(110, 82);
             this.x3x1.TabIndex = 0;
             this.x3x1.UseVisualStyleBackColor = false;
+            this.x3x1.Click += new System.EventHandler(this.x3x1_Click);
             // 
             // x4x3
             // 
@@ -149,6 +157,7 @@
             this.x4x3.TabIndex = 0;
             this.x4x3.Text = "\\";
             this.x4x3.UseVisualStyleBackColor = false;
+            this.x4x3.Click += new System.EventHandler(this.x4x3_Click);
             // 
             // x4x2
             // 
@@ -159,6 +168,7 @@
             this.x4x2.Size = new System.Drawing.Size(110, 82);
             this.x4x2.TabIndex = 0;
             this.x4x2.UseVisualStyleBackColor = false;
+            this.x4x2.Click += new System.EventHandler(this.x4x2_Click);
             // 
             // x4x1
             // 
@@ -169,6 +179,7 @@
             this.x4x1.Size = new System.Drawing.Size(110, 82);
             this.x4x1.TabIndex = 0;
             this.x4x1.UseVisualStyleBackColor = false;
+            this.x4x1.Click += new System.EventHandler(this.x4x1_Click);
             // 
             // button1
             // 
@@ -191,11 +202,32 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(404, 353);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 34);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Check";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(41, 353);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "setfound";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 411);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.x4x1);
@@ -235,6 +267,8 @@
         private System.Windows.Forms.Button x4x1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }
 
