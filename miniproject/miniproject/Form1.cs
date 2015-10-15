@@ -216,6 +216,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -238,6 +239,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -259,6 +261,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -281,6 +284,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -302,6 +306,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -323,6 +328,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -344,6 +350,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -365,6 +372,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -386,6 +394,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -407,6 +416,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -428,6 +438,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -449,6 +460,7 @@ namespace miniproject
                     {
                         button.BackColor = Color.Empty;
                     }
+                    Array.Clear(check, 0, check.Length);
                 }
 
             }
