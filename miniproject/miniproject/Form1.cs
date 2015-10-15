@@ -105,6 +105,7 @@ namespace miniproject
         string[] tiles = new string[12];
         string[] check = new string[3];
         List<Button> buttons = new List<Button>();
+        int aantalsetfound = 0;
 
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
         public Form1()
@@ -176,11 +177,6 @@ namespace miniproject
             return Encoding.Unicode.GetString(buffer, 0, totalRead);
         }
 
-        public void moetvervangenworden()
-        {
-            //foreach () ;
-        }
-
         public void plaatjesSchrijven()
         {
             int n = 0;
@@ -189,6 +185,26 @@ namespace miniproject
                 buttons[n].Image = Image.FromFile(Path.Combine(path, "Pictures\\C#\\"+plaatje+".gif"));
                 n++;
             }
+        }
+
+        public void checkSet()
+        {
+            WriteMessage(clientSocket, "set");
+            WriteMessage(clientSocket, check[0]);
+            WriteMessage(clientSocket, check[1]);
+            WriteMessage(clientSocket, check[2]);
+            WriteMessage(clientSocket, "done");
+            if(ReadMessage(clientSocket)== "true")
+            {
+                aantalsetfound++;
+                label2.Text = aantalsetfound + "Set Found ";
+                MessageBox.Show("Set found");
+            }
+            else
+            {
+                MessageBox.Show("No set found");
+            }
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -212,7 +228,8 @@ namespace miniproject
                 }
                 else if (i == 3)
                 {
-                    foreach(Button button in buttons)
+                    checkSet();
+                    foreach (Button button in buttons)
                     {
                         button.BackColor = Color.Empty;
                     }
@@ -468,9 +485,3 @@ namespace miniproject
     }
   }
 
-
-//for(int i = 0; if < array.length; i++){
-//    if(Array[i] == null{
-//    voegtoe();
-//    break;
-//    }}
