@@ -140,6 +140,10 @@ namespace miniproject
                 tiles[i] = ReadMessage(clientSocket);
             }
             WriteMessage(clientSocket, "ready");
+            foreach(Button button in buttons)
+            {
+                button.Enabled = true;
+            }
             
         }
         private static void WriteMessage(TcpClient client, string message)

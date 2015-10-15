@@ -48,6 +48,7 @@
             // 
             // x1x1
             // 
+            this.x1x1.Enabled = false;
             this.x1x1.BackColor = System.Drawing.SystemColors.Control;
             this.x1x1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.x1x1.Location = new System.Drawing.Point(44, 71);
@@ -60,6 +61,7 @@
             // 
             // x1x2
             // 
+            this.x1x2.Enabled = false;
             this.x1x2.BackColor = System.Drawing.SystemColors.Control;
             this.x1x2.Location = new System.Drawing.Point(44, 161);
             this.x1x2.Margin = new System.Windows.Forms.Padding(2);
@@ -71,6 +73,7 @@
             // 
             // x1x3
             // 
+            this.x1x3.Enabled = false;
             this.x1x3.BackColor = System.Drawing.SystemColors.Control;
             this.x1x3.Location = new System.Drawing.Point(44, 248);
             this.x1x3.Margin = new System.Windows.Forms.Padding(2);
@@ -82,6 +85,7 @@
             // 
             // x2x3
             // 
+            this.x2x3.Enabled = false;
             this.x2x3.BackColor = System.Drawing.SystemColors.Control;
             this.x2x3.Location = new System.Drawing.Point(158, 248);
             this.x2x3.Margin = new System.Windows.Forms.Padding(2);
@@ -93,6 +97,7 @@
             // 
             // x3x3
             // 
+            this.x3x3.Enabled = false;
             this.x3x3.BackColor = System.Drawing.SystemColors.Control;
             this.x3x3.Location = new System.Drawing.Point(273, 248);
             this.x3x3.Margin = new System.Windows.Forms.Padding(2);
@@ -104,6 +109,7 @@
             // 
             // x3x2
             // 
+            this.x3x2.Enabled = false;
             this.x3x2.BackColor = System.Drawing.SystemColors.Control;
             this.x3x2.Location = new System.Drawing.Point(273, 161);
             this.x3x2.Margin = new System.Windows.Forms.Padding(2);
@@ -115,6 +121,7 @@
             // 
             // x2x2
             // 
+            this.x2x2.Enabled = false;
             this.x2x2.BackColor = System.Drawing.SystemColors.Control;
             this.x2x2.Location = new System.Drawing.Point(158, 161);
             this.x2x2.Margin = new System.Windows.Forms.Padding(2);
@@ -126,6 +133,7 @@
             // 
             // x2x1
             // 
+            this.x2x1.Enabled = false;
             this.x2x1.BackColor = System.Drawing.SystemColors.Control;
             this.x2x1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.x2x1.Location = new System.Drawing.Point(158, 71);
@@ -138,6 +146,7 @@
             // 
             // x3x1
             // 
+            this.x3x1.Enabled = false;
             this.x3x1.BackColor = System.Drawing.SystemColors.Control;
             this.x3x1.Location = new System.Drawing.Point(272, 71);
             this.x3x1.Margin = new System.Windows.Forms.Padding(2);
@@ -149,6 +158,7 @@
             // 
             // x4x3
             // 
+            this.x4x3.Enabled = false;
             this.x4x3.BackColor = System.Drawing.SystemColors.Control;
             this.x4x3.Location = new System.Drawing.Point(386, 248);
             this.x4x3.Margin = new System.Windows.Forms.Padding(2);
@@ -161,6 +171,7 @@
             // 
             // x4x2
             // 
+            this.x4x2.Enabled = false;
             this.x4x2.BackColor = System.Drawing.SystemColors.Control;
             this.x4x2.Location = new System.Drawing.Point(387, 161);
             this.x4x2.Margin = new System.Windows.Forms.Padding(2);
@@ -172,6 +183,7 @@
             // 
             // x4x1
             // 
+            this.x4x1.Enabled = false;
             this.x4x1.BackColor = System.Drawing.SystemColors.Control;
             this.x4x1.Location = new System.Drawing.Point(386, 71);
             this.x4x1.Margin = new System.Windows.Forms.Padding(2);
