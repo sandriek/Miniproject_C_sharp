@@ -134,17 +134,34 @@ namespace miniproject
         private void button1_Click(object sender, EventArgs e)
         {
 
-            clientSocket.Connect(getIP(), 8888);
-            for(int i = 0; i < tiles.Length; i++)
+            if (connect())
             {
-                tiles[i] = ReadMessage(clientSocket);
-            }
-            WriteMessage(clientSocket, "ready");
-            foreach(Button button in buttons)
-            {
-                button.Enabled = true;
+                for (int i = 0; i < tiles.Length; i++)
+                {
+                    tiles[i] = ReadMessage(clientSocket);
+                }
+                WriteMessage(clientSocket, "ready");
+                foreach (Button button in buttons)
+                {
+                    button.Enabled = true;
+                }
             }
             
+        }
+
+        private Boolean connect()
+        {
+            try
+            {
+                clientSocket.Connect(getIP(), 8888);
+                return true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Server not found");
+                return false;
+
+            }
         }
         private static void WriteMessage(TcpClient client, string message)
         {
@@ -226,6 +243,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x1x1.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -235,6 +253,7 @@ namespace miniproject
                     checkSet();
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -250,6 +269,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x2x1.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -258,6 +278,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -272,6 +293,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x3x1.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -280,6 +302,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -295,6 +318,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x4x1.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -303,6 +327,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -317,6 +342,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x1x2.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -325,6 +351,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -339,6 +366,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x2x2.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -347,6 +375,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -361,6 +390,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x3x2.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -369,6 +399,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -383,6 +414,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x4x2.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -391,6 +423,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -405,6 +438,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x1x3.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -413,6 +447,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -427,6 +462,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x2x3.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -435,6 +471,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -449,6 +486,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x3x3.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -457,6 +495,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);
@@ -471,6 +510,7 @@ namespace miniproject
             {
                 if (check[i] == null)
                 {
+                    x4x3.Enabled = false;
                     check[i] = x1x1.Image.ToString();
                     x1x1.BackColor = Color.Blue;
                     break;
@@ -479,6 +519,7 @@ namespace miniproject
                 {
                     foreach (Button button in buttons)
                     {
+                        button.Enabled = true;
                         button.BackColor = Color.Empty;
                     }
                     Array.Clear(check, 0, check.Length);

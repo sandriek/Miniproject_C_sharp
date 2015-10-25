@@ -42,14 +42,13 @@
             this.x4x1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // x1x1
             // 
-            this.x1x1.Enabled = false;
             this.x1x1.BackColor = System.Drawing.SystemColors.Control;
+            this.x1x1.Enabled = false;
             this.x1x1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.x1x1.Location = new System.Drawing.Point(44, 71);
             this.x1x1.Margin = new System.Windows.Forms.Padding(2);
@@ -61,8 +60,8 @@
             // 
             // x1x2
             // 
-            this.x1x2.Enabled = false;
             this.x1x2.BackColor = System.Drawing.SystemColors.Control;
+            this.x1x2.Enabled = false;
             this.x1x2.Location = new System.Drawing.Point(44, 161);
             this.x1x2.Margin = new System.Windows.Forms.Padding(2);
             this.x1x2.Name = "x1x2";
@@ -73,8 +72,8 @@
             // 
             // x1x3
             // 
-            this.x1x3.Enabled = false;
             this.x1x3.BackColor = System.Drawing.SystemColors.Control;
+            this.x1x3.Enabled = false;
             this.x1x3.Location = new System.Drawing.Point(44, 248);
             this.x1x3.Margin = new System.Windows.Forms.Padding(2);
             this.x1x3.Name = "x1x3";
@@ -85,8 +84,8 @@
             // 
             // x2x3
             // 
-            this.x2x3.Enabled = false;
             this.x2x3.BackColor = System.Drawing.SystemColors.Control;
+            this.x2x3.Enabled = false;
             this.x2x3.Location = new System.Drawing.Point(158, 248);
             this.x2x3.Margin = new System.Windows.Forms.Padding(2);
             this.x2x3.Name = "x2x3";
@@ -97,8 +96,8 @@
             // 
             // x3x3
             // 
-            this.x3x3.Enabled = false;
             this.x3x3.BackColor = System.Drawing.SystemColors.Control;
+            this.x3x3.Enabled = false;
             this.x3x3.Location = new System.Drawing.Point(273, 248);
             this.x3x3.Margin = new System.Windows.Forms.Padding(2);
             this.x3x3.Name = "x3x3";
@@ -109,8 +108,8 @@
             // 
             // x3x2
             // 
-            this.x3x2.Enabled = false;
             this.x3x2.BackColor = System.Drawing.SystemColors.Control;
+            this.x3x2.Enabled = false;
             this.x3x2.Location = new System.Drawing.Point(273, 161);
             this.x3x2.Margin = new System.Windows.Forms.Padding(2);
             this.x3x2.Name = "x3x2";
@@ -121,8 +120,8 @@
             // 
             // x2x2
             // 
-            this.x2x2.Enabled = false;
             this.x2x2.BackColor = System.Drawing.SystemColors.Control;
+            this.x2x2.Enabled = false;
             this.x2x2.Location = new System.Drawing.Point(158, 161);
             this.x2x2.Margin = new System.Windows.Forms.Padding(2);
             this.x2x2.Name = "x2x2";
@@ -133,8 +132,8 @@
             // 
             // x2x1
             // 
-            this.x2x1.Enabled = false;
             this.x2x1.BackColor = System.Drawing.SystemColors.Control;
+            this.x2x1.Enabled = false;
             this.x2x1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.x2x1.Location = new System.Drawing.Point(158, 71);
             this.x2x1.Margin = new System.Windows.Forms.Padding(2);
@@ -146,8 +145,8 @@
             // 
             // x3x1
             // 
-            this.x3x1.Enabled = false;
             this.x3x1.BackColor = System.Drawing.SystemColors.Control;
+            this.x3x1.Enabled = false;
             this.x3x1.Location = new System.Drawing.Point(272, 71);
             this.x3x1.Margin = new System.Windows.Forms.Padding(2);
             this.x3x1.Name = "x3x1";
@@ -158,8 +157,8 @@
             // 
             // x4x3
             // 
-            this.x4x3.Enabled = false;
             this.x4x3.BackColor = System.Drawing.SystemColors.Control;
+            this.x4x3.Enabled = false;
             this.x4x3.Location = new System.Drawing.Point(386, 248);
             this.x4x3.Margin = new System.Windows.Forms.Padding(2);
             this.x4x3.Name = "x4x3";
@@ -171,8 +170,8 @@
             // 
             // x4x2
             // 
-            this.x4x2.Enabled = false;
             this.x4x2.BackColor = System.Drawing.SystemColors.Control;
+            this.x4x2.Enabled = false;
             this.x4x2.Location = new System.Drawing.Point(387, 161);
             this.x4x2.Margin = new System.Windows.Forms.Padding(2);
             this.x4x2.Name = "x4x2";
@@ -183,8 +182,8 @@
             // 
             // x4x1
             // 
-            this.x4x1.Enabled = false;
             this.x4x1.BackColor = System.Drawing.SystemColors.Control;
+            this.x4x1.Enabled = false;
             this.x4x1.Location = new System.Drawing.Point(386, 71);
             this.x4x1.Margin = new System.Windows.Forms.Padding(2);
             this.x4x1.Name = "x4x1";
@@ -214,16 +213,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Game of Set";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(404, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Check";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -239,7 +228,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 411);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.x4x1);
@@ -279,7 +267,6 @@
         private System.Windows.Forms.Button x4x1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
     }
 }
