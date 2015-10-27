@@ -55,7 +55,8 @@ namespace Miniproject_server
                     while (amount > 0)
                     {
                         int tile = rnd.Next(1, File.ReadAllLines("tiles").Length);
-                        string line = File.ReadLines("tiles").Skip(tile - 1).First();
+                        tiles.Add(File.ReadLines("tiles").Skip(tile - 1).First());
+                        amount--;
                     }
                 }
 
