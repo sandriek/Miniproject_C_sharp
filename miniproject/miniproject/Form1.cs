@@ -136,17 +136,28 @@ namespace miniproject
 
             if (connect())
             {
+                WriteMessage(clientSocket, "receiving");
                 for (int i = 0; i < tiles.Length; i++)
                 {
                     tiles[i] = ReadMessage(clientSocket);
                 }
                 WriteMessage(clientSocket, "ready");
+                button1.Enabled = false;
+                plaatjesSchrijven();
                 foreach (Button button in buttons)
                 {
                     button.Enabled = true;
                 }
             }
             
+        }
+
+        private void disableButtons()
+        {
+            foreach (Button button in buttons)
+            {
+                button.Enabled = false;
+            }
         }
 
         private Boolean connect()
@@ -215,11 +226,22 @@ namespace miniproject
             WriteMessage(clientSocket, check[1]);
             WriteMessage(clientSocket, check[2]);
             WriteMessage(clientSocket, "done");
-            if(ReadMessage(clientSocket)== "true")
+            String message = ReadMessage(clientSocket);
+            if(message== "true")
             {
                 aantalsetfound++;
                 label2.Text = aantalsetfound + "Set Found ";
                 MessageBox.Show("Set found");
+            }
+            else if(message== "won")
+            {
+                disableButtons();
+                MessageBox.Show("You won");
+            }
+            else if(message== "lose")
+            {
+                disableButtons();
+                MessageBox.Show("You lost");
             }
             else
             {
