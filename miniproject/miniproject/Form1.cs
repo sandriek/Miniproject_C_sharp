@@ -139,7 +139,7 @@ namespace miniproject
             if (connect())
             {
                 WriteMessage(clientSocket, "receiving");
-                for (int i = 0; i < tiles.Length; i++)
+                for (int i = 1; i < tiles.Length; i++)
                 {
                     tiles[i] = ReadMessage(clientSocket);
                 }
