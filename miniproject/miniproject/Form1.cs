@@ -104,8 +104,10 @@ namespace miniproject
 
         string[] tiles = new string[12];
         string[] check = new string[3];
+        List<Array> setfound = new List<Array>();
         List<Button> buttons = new List<Button>();
         int aantalsetfound = 0;
+        int settalreadyfound = 0;
 
         System.Net.Sockets.TcpClient clientSocket = new System.Net.Sockets.TcpClient();
         public Form1()
@@ -231,6 +233,7 @@ namespace miniproject
             {
                 aantalsetfound++;
                 label2.Text = aantalsetfound + "Set Found ";
+                setfound.Add(check);
                 MessageBox.Show("Set found");
             }
             else if(message== "won")
@@ -272,17 +275,39 @@ namespace miniproject
                 }
                 else if (i == 3)
                 {
-                    checkSet();
-                    foreach (Button button in buttons)
+                    foreach(Array foundset in setfound)
                     {
-                        button.Enabled = true;
-                        button.BackColor = Color.Empty;
+                        settalreadyfound = 0;
+                        foreach(string sset in foundset)
+                        {
+                            if(check.Contains(sset))
+                            {
+                                settalreadyfound++;
+                            }
+                            if(settalreadyfound == 3)
+                            {
+                                resetButtons();
+                                MessageBox.Show("Set already found");
+                                break;
+                            }
+                        }
                     }
+                    checkSet();
+                    resetButtons();
                     Array.Clear(check, 0, check.Length);
                 }
 
             }
 
+        }
+
+        private void resetButtons()
+        {
+            foreach (Button button in buttons)
+            {
+                button.Enabled = true;
+                button.BackColor = Color.Empty;
+            }
         }
 
         private void x2x1_Click(object sender, EventArgs e)
