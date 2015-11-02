@@ -271,39 +271,48 @@ namespace miniproject
             }
         }
 
+        private void settExists()
+        {
+            foreach (Array foundset in setfound)
+            {
+                if (settalreadyfound == 3)
+                {
+                    break;
+                }
+                settalreadyfound = 0;
+                foreach (string sset in foundset)
+                {
+                    if (check.Contains(sset))
+                    {
+                        settalreadyfound++;
+                    }
+                    if (settalreadyfound == 3)
+                    {
+                        resetButtons();
+                        MessageBox.Show("Set already found");
+                        break;
+                    }
+                }
+            }
+            checkSet();
+            resetButtons();
+            Array.Clear(check, 0, check.Length);
+        }
+
         private void x1x1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i <= check.Length-1; i++)
             {
-                if (check[i] == null)
+                if (i == 2)
+                {
+                    settExists();
+                }
+                else if (check[i] == null)
                 {
                     x1x1.Enabled = false;
                     check[i] = tiles[0];
                     x1x1.BackColor = Color.Blue;
                     break;
-                }
-                else if (i == 3)
-                {
-                    foreach(Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach(string sset in foundset)
-                        {
-                            if(check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if(settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -314,35 +323,16 @@ namespace miniproject
         {
             for (int i = 0; i <= check.Length-1; i++)
             {
-                if (check[i] == null)
+                if (i == 2)
+                {
+                    settExists();
+                }
+                else if (check[i] == null)
                 {
                     x2x1.Enabled = false;
                     check[i] = tiles[1];
                     x2x1.BackColor = Color.Blue;
                     break;
-                }
-                else if (i == 3)
-                {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -352,35 +342,16 @@ namespace miniproject
         {
             for (int i = 0; i <= check.Length-1; i++)
             {
-                if (check[i] == null)
+                if (i == 2)
+                {
+                    settExists();
+                }
+                else if (check[i] == null)
                 {
                     x3x1.Enabled = false;
                     check[i] = tiles[2];
                     x3x1.BackColor = Color.Blue;
                     break;
-                }
-                else if (i == 3)
-                {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -391,35 +362,16 @@ namespace miniproject
         {
             for (int i = 0; i <= check.Length-1; i++)
             {
+                if (i == 2)
+                {
+                    settExists();
+                }
                 if (check[i] == null)
                 {
                     x4x1.Enabled = false;
                     check[i] = tiles[3];
                     x4x1.BackColor = Color.Blue;
                     break;
-                }
-                else if (i == 3)
-                {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
                 }
 
             }
@@ -429,28 +381,9 @@ namespace miniproject
         {
             for (int i = 0; i <= check.Length-1; i++)
             {
-                if (i == 3)
+                if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -469,26 +402,7 @@ namespace miniproject
             {
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -507,26 +421,7 @@ namespace miniproject
             {
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -545,26 +440,7 @@ namespace miniproject
             {   
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -583,26 +459,7 @@ namespace miniproject
             {
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -621,26 +478,7 @@ namespace miniproject
             {
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -659,26 +497,7 @@ namespace miniproject
             {
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
@@ -697,26 +516,7 @@ namespace miniproject
             {
                 if (i == 2)
                 {
-                    foreach (Array foundset in setfound)
-                    {
-                        settalreadyfound = 0;
-                        foreach (string sset in foundset)
-                        {
-                            if (check.Contains(sset))
-                            {
-                                settalreadyfound++;
-                            }
-                            if (settalreadyfound == 3)
-                            {
-                                resetButtons();
-                                MessageBox.Show("Set already found");
-                                break;
-                            }
-                        }
-                    }
-                    checkSet();
-                    resetButtons();
-                    Array.Clear(check, 0, check.Length);
+                    settExists();
                 }
                 else if (check[i] == null)
                 {
